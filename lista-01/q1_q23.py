@@ -184,4 +184,21 @@ def q21():
 
     print(f"\n {temperatura_fahrenheit:.1f}° Graus Fahrenheit = {temperatura_celsius:.1f}° Graus Celsius")
 
-q21()
+
+def q22():
+    km = get_float_number("distancia(km): ")
+
+    m = km * 1000
+
+    print(f"\n{km} km = {m} m")
+
+
+def q23():
+    kg = get_float_number("peso(kg): ")
+
+    g = kg * 1000
+
+    print(f"\n{kg} kg = {g} g")
+
+
+
