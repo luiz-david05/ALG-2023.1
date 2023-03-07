@@ -200,5 +200,3 @@ def q23():
 
     print(f"\n{kg} kg = {g} g")
 
-
-
