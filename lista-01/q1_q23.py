@@ -126,7 +126,7 @@ def q14():
     print(f"\nmedia = {media_ponderada:.1f}")
 
 def pedir_nota_peso(texto):
-    (n, p) = input(texto).split(" ")
+    (n, p) = input(texto)
 
     return (float(n), float(p))
 
