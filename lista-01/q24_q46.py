@@ -262,4 +262,3 @@ def q46():
 
     print(f"\nvalor = R$ {valor:.2f}\nentrada = R$ {entrada:.2f}\nprestações = R$ {prestacao:.2f}")
 
-q46()
