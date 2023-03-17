@@ -310,10 +310,6 @@ def q12():
         print(f"\n{n} é um número par")
 
 
-def numero_par(n):
-    return n % 2 == 0
-
-
 def q13():
     n1 = get_int_number("1° número: ")
     n2 = get_int_number("2° número: ")
