@@ -29,7 +29,7 @@ def main():
         print(f"\nVocê levará {qtd_anos} ano(s) e {qtd_meses} mes(es) para alcançar seu objetivo de : R${valor_realizar_objetivo:.2f}")   
 
     else:
-        print(f"\nVocê levará mês(es) para alcançar seu objetivo de  R$ {valor_realizar_objetivo:.2f}")   
+        print(f"\nVocê levará mês(es) para alcançar seu objetivo de R$ {valor_realizar_objetivo:.2f}")   
 
 
 def pegar_taxa_de_investimento_valida(texto):
