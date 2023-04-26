@@ -11,13 +11,13 @@ def get_number(text):
             print("Digite um número válido.")
 
 
-def get_positive_number(text="n: "):
+def get_valid_number(text="n: "):
     n = get_number(text)
 
     if n <= 0:
         print("Digite um número maior que 0.")
 
-        n = get_positive_number(text)
+        n = get_valid_number(text)
 
     return n
 
