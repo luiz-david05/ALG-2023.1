@@ -3,7 +3,7 @@ from get_functions import *
 
 def main():
     valor_iphone = 3500
-    forma_pagamento = 'cartão de crédito'
+    forma_pagamento = pegar_forma_de_pagamento_valida()
 
     if forma_pagamento == 'pix' or forma_pagamento == 'dinheiro':
         desconto = valor_iphone * 0.15
