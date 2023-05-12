@@ -1,10 +1,7 @@
 def main():
-  n1 = int(input())
-  n2 = int(input())
-  
-  prod = n1 * n2
+  a, b = [int(input()) for _ in range(2)]
 
-  print(f"PROD = {prod}")
+  print(f"PROD = {a * b}")
 
 main()
   

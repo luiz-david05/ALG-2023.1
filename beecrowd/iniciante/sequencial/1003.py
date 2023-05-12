@@ -1,10 +1,7 @@
 def main():
-  a = int(input())
-  b = int(input())
-  
-  soma = a + b
+  a, b = [int(input()) for _ in range(2)]
 
-  print(f"SOMA = {soma}")
+  print(f"SOMA = {a + b}")
 
 main()
   

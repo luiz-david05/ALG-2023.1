@@ -1,10 +1,11 @@
 def main():
     n1, n2, n3 = list(map(int, input().split(" ")))
-    maior = o_maior(n1, n2, n3)
+    maior = eh_maior(n1, n2, n3)
 
     print(f"{maior} eh o maior")
 
-def o_maior(n1, n2, n3):
+
+def eh_maior(n1, n2, n3):
     return max(n1, n2, n3)
 
 

@@ -4,3 +4,5 @@ def main():
 if __name__ == "__main__":
     msg = main()
     print(msg)
+
+print("Hello World!")

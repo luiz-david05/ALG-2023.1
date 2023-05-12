@@ -1,6 +1,5 @@
 def main():
-  a = float(input())
-  b = float(input())
+  a, b = [float(input()) for _ in range(2)]
 
   media = calculate_media(a, b)
 
