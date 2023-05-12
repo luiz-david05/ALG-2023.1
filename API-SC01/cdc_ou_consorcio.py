@@ -82,8 +82,4 @@ def pegar_taxa_adm_valida(texto = "taxa de administração: "):
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     main()
-=======
-    main()
->>>>>>> e91a96a63978650ca0613319dcf8458bfd8ce461

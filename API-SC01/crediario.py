@@ -3,11 +3,8 @@ from get_functions import *
 
 def main():
     valor_iphone = 3500
-<<<<<<< HEAD
     forma_pagamento = 'cartão de crédito'
-=======
     forma_pagamento = pegar_forma_de_pagamento_valida()
->>>>>>> e91a96a63978650ca0613319dcf8458bfd8ce461
 
     if forma_pagamento == 'pix' or forma_pagamento == 'dinheiro':
         desconto = valor_iphone * 0.15
@@ -61,8 +58,4 @@ def pegar_qtd_parcelas_validas(texto = "quantidade de parcelas: "):
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     main()
-=======
-    main()
->>>>>>> e91a96a63978650ca0613319dcf8458bfd8ce461
