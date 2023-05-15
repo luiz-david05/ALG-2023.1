@@ -62,16 +62,15 @@ def main():
     else:
         inss = salario_base_mensal * 0.16
 
-    salario_base_mensal -= inss
+    salario_liquido = salario_base_mensal - inss
 
     # calcular ir
     ir = 0
-    if salario_base_mensal > 5000:
-        ir = (salario_base_mensal - 2000) * 0.275
+    if salario_liquido > 5000:
+        ir = (salario_liquido - 2000) * 0.275
 
     # salario liquido
-    salario_liquido = salario_base_mensal - ir
-
+    salario_liquido = salario_liquido - ir
     # mostrar resultados na tela
     print(5 * "=", "FOLHA DE PAGAMENTO", 5 * "=")
     print(f"professor: {nome_professor}")
