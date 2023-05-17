@@ -7,12 +7,6 @@ def q16():
     juros = 0.0085 
     pagamento = 200
     saldo = 0
-<<<<<<< HEAD
-
-=======
-    
-    # incompleta
->>>>>>> e91a96a63978650ca0613319dcf8458bfd8ce461
     qtd_dias = 0
     while saldo <= emprestimo:
         emprestimo += emprestimo * juros
@@ -20,13 +14,10 @@ def q16():
 
         qtd_dias += 1
 
-<<<<<<< HEAD
         if qtd_dias % 5 == 0:
             for i in range(1, 3):
                 emprestimo += emprestimo + juros
-
-=======
->>>>>>> e91a96a63978650ca0613319dcf8458bfd8ce461
+                saldo += pagamento
     print(f"quantidade dias úteis: {qtd_dias}")
 
 
@@ -117,7 +108,6 @@ def q19():
     print(f"\nid boi mais magro: {id_mais_magro}\tpeso {peso_boi_mais_magro} kg")
 
 
-<<<<<<< HEAD
 def q21():
     n1 = get_number("1° número: ")
     n2 = get_number("2° número: ")
@@ -177,8 +167,6 @@ def q24():
         j += 1
 
 
-=======
->>>>>>> e91a96a63978650ca0613319dcf8458bfd8ce461
 def q25():
     canal = ''
     total_telespectadores = 0
@@ -432,17 +420,7 @@ def q30():
 
         print(f"\nnome do produto comprado: {nome_produto}")
         print(f"valor total a ser pago: R$ {valor_total:.2f}")
-<<<<<<< HEAD
 
-
-def q30():
-    numero = 0
-
-
-def pegar_numero_3digitos(texto = "número positivo de 3 dígitos:")
-=======
-  
->>>>>>> e91a96a63978650ca0613319dcf8458bfd8ce461
 
 
             
