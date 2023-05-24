@@ -1,4 +1,4 @@
-from function_utils import *
+from function_utils import pegar_numero
 
 def criar_vetor(tamanho):
     vetor = [0] * tamanho
@@ -71,3 +71,42 @@ def remover_repetidos(vetor):
     return vetor_sem_repetidos
 
 
+def criar_vetor_b(vetor_a):
+    vetor_b = criar_vetor_v2(0)
+
+    indice = 0
+    for elemento in vetor_a:
+        if indice % 2 == 0:
+            vetor_b.append(0)
+        else:
+            vetor_b.append(1)
+        indice += 1
+    return vetor_b
+
+
+def maior_menor_elemento_e_indice_no_vetor(vetor):
+    indice = 0
+    maior_elemento = vetor[0]
+    indice_maior_elemento = 0
+    menor_elemento = vetor[0]
+    indice_menor_elemento = 0
+
+    for elemento in vetor:
+        if elemento > maior_elemento:
+            maior_elemento = elemento
+            indice_maior_elemento = indice
+        if elemento < menor_elemento:
+            menor_elemento = elemento
+            indice_menor_elemento = indice
+
+        indice += 1
+
+    return maior_elemento, indice_maior_elemento, menor_elemento, indice_menor_elemento
+
+
+def gerar_sequencia_fibonacci(qtd_termos):
+    sequencia_fibonacci = [0, 1]
+
+    for i in range(qtd_termos - 2):
+        sequencia_fibonacci.append(sequencia_fibonacci[-1] + sequencia_fibonacci[-2])
+    return sequencia_fibonacci
