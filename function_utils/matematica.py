@@ -100,12 +100,13 @@ def eh_numero_perfeito(n):
     if n == 0:
         return True
 
-    soma_divisores = 0
+    soma = 0
 
-    for divisor in divisores(n):
-        soma_divisores += divisor
+    for i in range(1, n):
+        if n % i == 0:
+            soma += i
 
-    return soma_divisores == n
+    return soma == n
 
 
 def raiz_quadrada(n): return raiz(n, 2)
