@@ -108,6 +108,22 @@ def main():
             continuar()
             menu()
             opcao = pegar_opcao_valida()
+        # elif opcao == 11:
+        
+        elif opcao == 12:
+            novo_vetor = criar_vetor_vazio()
+            novo_vetor = preencher_vetor(novo_vetor)
+            print()
+            print(f"O vetor {novo_vetor} está contido 100%  no vetor {vetor}?")
+            print()
+            if verificar_se_ventor_contido_em_outro(novo_vetor, vetor):
+                print("Resposta: Sim")
+            else:
+                print("Resposta: Não")
+            print()
+            continuar()
+            menu()
+            opcao = pegar_opcao_valida()
 
     tchau_personalizado()    
 
@@ -123,7 +139,7 @@ def menu():
     print("9 - Exibir maior e menor elemento e seus índices")
     print("10 - Sortear dois números: um positivo e outro negativo")
     # print("11 - Gerar N grupos de T tamanhos. Não repetir elementos")
-    # print("12 - Gerar novo vetor e verificar se está contido no vetor original (e na mesma ordem)")
+    print("12 - Gerar novo vetor e verificar se está contido no vetor original (e na mesma ordem)")
     # print("13 - Top N maiores elementos")
     # print("14 - Top N menores elementos")
     # print("15 - Listar valor médio, e listar números maiores que a média e menores que a média")

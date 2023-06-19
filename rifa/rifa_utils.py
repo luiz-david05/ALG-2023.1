@@ -8,11 +8,22 @@ def mostrar_pontos(pontos):
 
 
 def adicionar_ponto(pontos):
+    print("Pontos disponíveis:")
     for i in range(len(pontos)):
         if pontos[i] == "-":
-            pontos[i] = input("Digite o nome do ponto: ")
-            print("Ponto adicionado com sucesso!")
-            return pontos
+            print(f"{i+1} - {pontos[i]} - {pontos[i]}")
+
+    ponto_escolhido = get_number("Digite o número do ponto que deseja adicionar: ")
+
+    if ponto_escolhido < 1 or ponto_escolhido > len(pontos):
+        print("Ponto inválido!")
+        adicionar_ponto(pontos)
+    
+    nome = get_string("Digite o nome da pessoa: ")
+
+    pontos[ponto_escolhido-1] = nome
+
+    print("Ponto adicionado com sucesso!")
 
 
 def get_valor_ponto():

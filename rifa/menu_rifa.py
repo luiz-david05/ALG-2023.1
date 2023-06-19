@@ -4,9 +4,13 @@ from rifa_utils import *
 
 def main():
     # pontos carregados do arquivo texto
+    print("Desenvolvido por: Luiz David Silva Gomes")
     print("Carregando pontos...")
     print("Pontos carregados com sucesso!")
     pontos = get_pontos()
+
+    print(4 * "-", "RIFA", 4 * "-")
+    print("Bem vindo ao sistema de rifa!")
 
     menu()
     opcao = opcao_valida()

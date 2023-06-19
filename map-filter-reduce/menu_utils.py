@@ -108,3 +108,10 @@ def menor_indice_elemento (vetor):
 
 def sortear_elemento(vetor):
     return vetor[randint(0, len(vetor) - 1)]
+
+
+def verificar_se_ventor_contido_em_outro(vetor1, vetor2):
+    for i in range(len(vetor1)):
+        if vetor1[i] not in vetor2:
+            return False
+    return True

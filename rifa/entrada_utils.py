@@ -18,3 +18,11 @@ def get_pontos():
         for line in f:
             pontos.append(line.strip())
     return pontos
+
+
+def get_string(texto):
+    s = input(texto)
+    if s == "":
+        print("Valor inválido!")
+        s = get_string(texto)
+    return s
