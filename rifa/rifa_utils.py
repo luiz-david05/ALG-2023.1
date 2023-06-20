@@ -15,7 +15,7 @@ def adicionar_ponto(pontos):
 
     ponto_escolhido = get_number("Digite o número do ponto que deseja adicionar: ")
 
-    if ponto_escolhido < 1 or ponto_escolhido > len(pontos):
+    if ponto_escolhido < 1 or ponto_escolhido > len(pontos) or pontos[ponto_escolhido-1] != "-":
         print("Ponto inválido!")
         adicionar_ponto(pontos)
     

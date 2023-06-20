@@ -9,7 +9,7 @@ def main():
     print("Pontos carregados com sucesso!")
     pontos = get_pontos()
 
-    print(4 * "-", "RIFA", 4 * "-")
+    print("\n\t", 4 * "-", "RIFA", 4 * "-")
     print("Bem vindo ao sistema de rifa!")
 
     menu()
@@ -69,7 +69,7 @@ def main():
             menu()
             opcao = opcao_valida()
         elif opcao == 8:
-            pontos = []
+            pontos = get_pontos()
             print("Rifa resetada com sucesso!")
 
             enter()
