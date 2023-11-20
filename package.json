@@ -1,0 +1,23 @@
+{
+  "name": "algoritmos-2023.1",
+  "version": "1.0.0",
+  "description": "atividades de algoritmo",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiz-david05/ALGORITMOS.git"
+  },
+  "author": "luiz-david05",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luiz-david05/ALGORITMOS/issues"
+  },
+  "homepage": "https://github.com/luiz-david05/ALGORITMOS#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
